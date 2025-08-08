@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template 3 | Elzero Design</title>
     <!-- The Main Css File -->
-    <link rel="stylesheet" href="CSS/elzero.css">
+    <link rel="stylesheet" href="css/elzero.css">
     <!-- The Normalize Css File -->
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -617,28 +617,28 @@
     <div class="events" id="events">
         <h2 class="special-title">Last Events</h2>
         <div class="container">
-            <img src="images/events.png" alt="">
+            <img src="images/events.png" alt="events">
             <div class="content">
                 <div class="cards">
                     <div class="card">
-                        <h1>479</h1>
+                        <h1 class="days"></h1>
                         <h4>Days</h4>
                     </div>
                     <div class="card">
-                        <h1>23</h1>
+                        <h1 class="hours"></h1>
                         <h4>Hours</h4>
                     </div>
                     <div class="card">
-                        <h1>13</h1>
+                        <h1 class="minutes"></h1>
                         <h4>Minutes</h4>
                     </div>
                     <div class="card">
-                        <h1>31</h1>
+                        <h1 class="seconds"></h1>
                         <h4>Seconds</h4>
                     </div>
                 </div>
                 <div class="text">
-                    <h3>Tech Masters Event 2024</h3>
+                    <h3>Tech Masters Event 2026</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
                 </div>
             </div>
@@ -857,29 +857,6 @@
     </footer>
     <!-- End Footer -->
 
-    <script>
-
-        // Hide / Show Mega Menu
-        const otherLinks = document.getElementById("other-links");
-        const megaManu = document.querySelector(".mega-menu");
-        const closeBtn = document.getElementById("close-btn");
-
-        otherLinks.addEventListener("click", function () { megaManu.classList.add('show') });
-
-        closeBtn.addEventListener("click", function () { megaManu.classList.remove('show') });   
-
-        // Fill Progress Bars When Reached They Own Section
-        const skillsSec = document.getElementById('skills');
-        const progsFills = skillsSec.querySelectorAll('.the-prog span');
-
-        function fillProgs() {
-            progsFills.forEach(progFill => progFill.style.cssText = `width: ${progFill.dataset.width}`);
-        };
-
-        window.onscroll = () => {
-            if (window.scrollY >= skillsSec.offsetTop) { fillProgs() };
-        }
-
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
